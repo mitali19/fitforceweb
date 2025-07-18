@@ -1,0 +1,117 @@
+@media (max-width: 992px) {
+  h1 {
+    font-size: 38px;
+  }
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 4em;
+  }
+  .hero-text {
+    position: relative;
+    text-align: center;
+  }
+  .hero-image {
+    padding: 2em 0;
+    justify-content: center;
+  }
+  .hero-image img {
+    width: 50vw;
+  }
+  .hero-shape {
+    position: translateY(-50%);
+    top: 20%;
+    left: calc(50% - 200px);
+  }
+  .hero-text {
+    width: 90vw;
+    position: relative;
+    bottom: 100px;
+    text-align: center;
+  }
+  .hero-subtext {
+    width: 100%;
+    max-width: 90vw;
+    text-align: center;
+  }
+  .pricing-cards {
+    gap: 2.5em;
+  }
+  footer {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    font-size: 35px;
+    color: #ffffff;
+  }
+  .dropdown {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background: var(--blackShade2);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 1em;
+    z-index: 1000;
+  }
+  .dropdown.active {
+    display: flex;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-links.active {
+    background-color: #1c1c1c;
+    width: 100%;
+    left: 0;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    z-index: 1000;
+    gap: 30px;
+  }
+  .nav {
+    padding: 1em 4em;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  .hero-section {
+    padding: 5em;
+  }
+  .marquee-section {
+    top: 3.12em;
+  }
+  .pricing-cards {
+    flex-direction: column;
+    gap: 3.75em;
+    align-items: center;
+  }
+  .featured {
+    transform: scale(1);
+  }
+}
+@media (max-width: 480px) {
+  .pricing h2,
+  .why-choose-us h2,
+  .services h2,
+  .testimonials h2 {
+    font-size: 2em;
+  }
+  .hero-shape {
+    height: 150px;
+    width: 150px;
+    position: translateY(-50%);
+    top: 20%;
+    left: calc(50% - 100px);
+  }
+}
